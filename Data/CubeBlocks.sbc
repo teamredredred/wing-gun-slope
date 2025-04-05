@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <CubeBlocks>
-    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
-      <Id>
-        <TypeId>SmallMissileLauncher</TypeId>
-        <SubtypeId>WingGunSlope</SubtypeId>
-      </Id>
-      <DisplayName>Wing Gun</DisplayName>
-      <Icon>Textures/GUI/Icons/Cubes/missile_launcher.dds</Icon>
-      <Description>Custom wing-mounted gun weapon</Description>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="1" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\winggunslope.fbx</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="1" />
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="SmallTube" Count="4" />
-        <Component Subtype="Computer" Count="1" />
-        <Component Subtype="SteelPlate" Count="4" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-      <MountPoints>
-        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\winggunslope.fbx" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\winggunslope.fbx" />
-      </BuildProgressModels>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <BlockPairName>WingGunSlope</BlockPairName>
-      <BuildTimeSeconds>9</BuildTimeSeconds>
-      <WeaponDefinitionId Subtype="SmallMissileLauncher" />
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>0.084</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>25</PCU>
-    </Definition>
-  </CubeBlocks>
-</Definitions>
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallGatlingGun</TypeId>
+				<SubtypeId>WingGunSlope</SubtypeId>
+			</Id>
+			<DisplayName>Wing Gun</DisplayName>
+			<Icon>Textures\GUI\Icons\gatling_gun.dds</Icon>
+			<Description>Custom wing-mounted gun weapon</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="3" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Cubes\small\WingGunSlope.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="1" />
+				<Component Subtype="Construction" Count="2" />
+				<Component Subtype="SmallTube" Count="4" />
+				<Component Subtype="Computer" Count="1" />
+				<Component Subtype="SteelPlate" Count="4" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="4.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="2.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="2.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\WingGunSlope_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\WingGunSlope_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>WingGunSlope</BlockPairName>
+			<BuildTimeSeconds>9</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="SmallMissileLauncher" />
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.084</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>80</PCU>
+			<InventoryFillFactorMin>.6</InventoryFillFactorMin>
+			<TargetingGroups>
+				<string>Weapons</string>
+			</TargetingGroups>
+		</Definition>
+	</CubeBlocks>

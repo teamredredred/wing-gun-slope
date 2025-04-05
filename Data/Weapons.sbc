@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>WingGunSlope</SubtypeId>
+            </Id>
+            <ProjectileAmmoData RateOfFire="1200" ShootSoundName="WepShipGatlingShot" ShotsInBurst="140" />
+            <ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+            <DeviateShotAngle>0.20</DeviateShotAngle>
+            <DeviateShotAngleAiming>0.20</DeviateShotAngleAiming>
+            <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <SecondarySoundName>WepShipGatlingRotation</SecondarySoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_projectile" Particle="Muzzle_Flash_Large" Loop="true" InstantStop="true" OffsetX="0" OffsetY="0" OffsetZ="-1" />
+                <Effect Action="Shoot" Dummy="None" Particle="Smoke_Autocannon" Loop="true" InstantStop="false"
+                OffsetX="0.09" OffsetY="0" OffsetZ="-1.2"
+                ParticleBirthStart="1" ParticleBirthMin="1" ParticleBirthMax="2" ParticleBirthDecrease="1" ParticleBirthIncrease="1" />
+            </Effects>
+            
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="NATO_25x184mm" />
+            </AmmoMagazines>
+        </Weapon>
+    </Weapons>
+</Definitions>
