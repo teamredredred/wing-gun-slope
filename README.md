@@ -14,11 +14,14 @@ This mod adds a wing-mounted gun weapon to Space Engineers.
 3. Look for the "Wing Gun" under the weapons category
 4. Place the weapon on a small grid ship
 
-## About
-This mod is currently a proof of concept to verify asset loading. The weapon uses the vanilla missile launcher functionality.
+## Technical Details
+- Uses gatling gun mechanics (uses NATO_25x184mm ammo)
+- Mounts from the back face only
+- Dimensions are 1x1x3 blocks (small grid)
+- Auto-tracking capability for targeting
 
-## Notes for Development
-- The wing gun model is placed as a small grid weapon
-- Currently uses default Space Engineers textures
-- Dimensions are 1x1x3 blocks
-- Mounted from the back side of the block
+## Troubleshooting
+If the model doesn't appear correctly:
+1. Make sure all files are in the correct directories
+2. Try restarting the game completely
+3. Check if there are any errors in the Space Engineers log

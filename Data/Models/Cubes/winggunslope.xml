@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Model Name="WingGunSlope">
+<Model Name="winggunslope">
   <Parameter Name="RescaleFactor">1.0</Parameter>
   <Parameter Name="RescaleToLengthInMeters">false</Parameter>
   <Parameter Name="Centered">false</Parameter>
+  <Parameter Name="RotationY">0</Parameter>
+  <Parameter Name="RotationX">0</Parameter>
+  <Parameter Name="RotationZ">0</Parameter>
+  <Parameter Name="MaterialsHash" Null="true" />
   <Material Name="Default">
     <Parameter Name="Technique">MESH</Parameter>
-    <Parameter Name="DiffuseTexture">Textures\Models\Cubes\GenericWeaponTexture.dds</Parameter>
-    <Parameter Name="NormalTexture">Textures\Models\Cubes\GenericWeaponTexture_ns.dds</Parameter>
-    <Parameter Name="ColorMetalTexture">Textures\Models\Cubes\GenericWeaponTexture_cm.dds</Parameter>
-    <Parameter Name="AddMapsTexture">Textures\Models\Cubes\GenericWeaponTexture_add.dds</Parameter>
+    <Parameter Name="ColorMetalTexture">Textures/Models/Weapons/GatlingGun_cm.dds</Parameter>
+    <Parameter Name="NormalTexture">Textures/Models/Weapons/GatlingGun_ns.dds</Parameter>
+    <Parameter Name="AddMapsTexture">Textures/Models/Weapons/GatlingGun_add.dds</Parameter>
+    <Parameter Name="AlphamaskTexture" Null="true" />
   </Material>
+  <MaterialRef Name="Emissive">
+    <Parameter Name="Texture">Textures/Particles/FlashA.dds</Parameter>
+    <Parameter Name="Technique">PARTICLE</Parameter>
+  </MaterialRef>
 </Model>

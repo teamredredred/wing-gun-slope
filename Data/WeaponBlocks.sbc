@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WeaponBlockDefinitions>
+    <WeaponBlock>
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>WingGunSlope</SubtypeId>
+      </Id>
+      <WeaponType>Projectile</WeaponType>
+      <ProjectileMuzzleVelocity>400</ProjectileMuzzleVelocity>
+      <ProjectileSpawnOffsetY>0</ProjectileSpawnOffsetY>
+      <ProjectileSpawnOffsetZ>2.8</ProjectileSpawnOffsetZ>
+      <ProjectileSpawnOffsetX>0</ProjectileSpawnOffsetX>
+      <UserControlled>true</UserControlled>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <DamageMultiplier>1</DamageMultiplier>
+      <RateOfFire>600</RateOfFire>
+      <ShotDelay>0</ShotDelay>
+      <BurstLength>180</BurstLength>
+      <BurstDelayTime>1000</BurstDelayTime>
+      <AmmoMagazineIds>
+        <AmmoMagazineId Type="MyObjectBuilder_AmmoMagazine" Subtype="NATO_25x184mm" />
+      </AmmoMagazineIds>
+      <DeviateShotAngle>0.2</DeviateShotAngle>
+      <DeviateShotAngleAiming>0.1</DeviateShotAngleAiming>
+      <ReleaseTimeAfterFire>100</ReleaseTimeAfterFire>
+      <Effects>
+        <Effect Action="Shoot" Dummy="barrel_001" Particle="Muzzle_Flash_Large" Loop="true" InstantStop="false" DisplayOnlyOnDummyFiring="true" OffsetX="0" OffsetY="0" OffsetZ="-0.2" />
+      </Effects>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BlockPairName>WingGunSlope</BlockPairName>
+      <ProjectileAutoTracking>true</ProjectileAutoTracking>
+      <WeaponDefinitionId Subtype="WingGunWeapon" />
+      <MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+      <UseRandomizedRange>true</UseRandomizedRange>
+      <ProjectileTracerColor>
+        <X>9</X>
+        <Y>4</Y>
+        <Z>0</Z>
+        <W>0</W>
+      </ProjectileTracerColor>
+    </WeaponBlock>
+  </WeaponBlockDefinitions>
+</Definitions>
