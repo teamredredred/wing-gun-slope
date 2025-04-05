@@ -4,7 +4,7 @@
 		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
 			<Id>
 				<TypeId>SmallGatlingGun</TypeId>
-				<SubtypeId>WingGunSlope</SubtypeId>
+				<SubtypeId></SubtypeId>
 			</Id>
 			<DisplayName>Wing Gun</DisplayName>
 			<Icon>Textures\GUI\Icons\gatling_gun.dds</Icon>
@@ -49,3 +49,4 @@
 			</TargetingGroups>
 		</Definition>
 	</CubeBlocks>
+</Definitions>
